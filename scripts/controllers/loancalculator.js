@@ -53,10 +53,10 @@ angular.module('mettaApp')
     vm.slider2 = {
       value: 12,
       min: 12,
-      max: 360,
+      max: 36,
       options: {
         floor: 12,
-        ceil: 360,
+        ceil: 36,
         translate: function (value) {
           vm.loan.duration= value;
           vm.loan.intrest = vm.intrest = (vm.slider.value * vm.loanRate * vm.slider2.value) / 100.0;
