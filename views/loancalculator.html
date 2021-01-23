@@ -1,0 +1,111 @@
+<div class="module ptb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+
+
+        <div class="row">
+          <div class="col-md-4">
+  <img src="images/banner6.jpg"  class="img img-responsive" alt=""  style="width:100%; background-size:contain;">
+          </div>
+          <div class="col-md-4">
+            <p>Loan Calculator</p>
+
+            <p> With {{ vm.loanRate }}%  Intrest Rate.</p>
+            <br>
+
+            <p>Please select Amount to be borrowed:</p>
+            <rzslider rz-slider-model="vm.slider.value" rz-slider-options="vm.slider.options"></rzslider>
+            <br> <br>
+            <p>Select the total number of Months:</p>
+            <rzslider rz-slider-model="vm.slider2.value" rz-slider-options="vm.slider2.options"></rzslider>
+            <br><br>
+
+
+
+          </div>
+          <div class="col-md-4">
+
+            <table class="table table-stripped">
+              <thead class="table_header">
+                <th>Loan Parameters</th>
+                <th>Description</th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fullname:</td>
+                  <td> {{ vm.form.firstName }} {{ vm.form.lastName }}</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>Loan Amount:</td>
+                  <td> ${{ vm.slider.value | number:2 }}</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Loan Period:</td>
+                  <td> {{ vm.slider2.value }} months</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Intrest:</td>
+                  <td> ${{ vm.intrest  | number:2}}</td>
+                  <td></td>
+                </tr>
+                <tr  style="color:red; font-weight:bold;">
+                  <td>10% upfront fees:</td>
+                  <td> ${{ vm.upfrontFee  | number:2}}</td>
+                  <td></td>
+                </tr>
+                <tr  style=" font-weight:bold;">
+                  <td>Amount Payable:</td>
+                  <td> ${{ vm.slider.value + vm.intrest - vm.upfrontFee | number:2 }}</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+            </h3>
+            <br>
+          </div>
+          <div class="col-md-12">
+            <h4 style="color:#FF5B1C!important">Note:</h4>
+
+            <ul  style="color:rgb(92, 91, 91)!important; font-size: 0.9em; margin-bottom:20px;">
+              <li>
+                To enable you qualify  for this loan, we collect 10% on any amount you requested as an upfront payment as the Bank Policy.
+              </li>
+              <li>
+                Ensure you make 10%  <b  style="color:#FF5B1C!important">(${{ vm.upfrontFee  | number:2}})</b> upfront payment of your Principal Loan.
+              </li>
+              <li>
+                Ensure you send the Screenshot of your payment.
+              </li>
+              <li>
+                Note that after the payment, send the screen shot of the payment slip to
+                <a href="mailto: support@midfirst.us"  style="color:#FF5B1C!important"> support@midfirst.us</a>. The loan will be
+                disbursed in less than  24hrs.
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-12">
+            <a class=" btn-lg  btn btn-danger text-white float-right"  ng-click="vm.decline()"
+            style="margin-left:30px!important;min-width:180px;" >Decline</a>
+            <a class="modal-trigger btn-lg   btn btn-secondary text-white float-right" href="#/processing">Proceed With Loan</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

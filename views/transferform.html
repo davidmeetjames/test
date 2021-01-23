@@ -1,0 +1,173 @@
+<!--blog section start-->
+<div class="module ptb-100">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12 col-md-12">
+        <h5> <a href="#/dashboard">Dashboard</a> </h5>
+        <h4>Welcome Daveson Camron!</h4>
+
+
+        <div class="jumbotron1">
+          <div class="row w-100">
+
+            <div class="col-md-12">
+              <div class="card border-success mx-sm-1 p-3">
+
+                <h5>Recipient Transfer Form</h5>
+
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Firstname <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control loan-input" required ng-model="vm.form.firstName">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Lastname <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control  loan-input" required ng-model="vm.form.lastName">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Date Of Birth <span class="important"> (required)</span></label>
+                      <input type="date" class="form-control  loan-input" required ng-model="vm.form.dob">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Sex <span class="important"> (required)</span></label>
+
+                      <select class="form-control  ">
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">State <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control  loan-input" required>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">City <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control  loan-input" required >
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Email Address <span class="important"> (required)</span></label>
+                      <input type="email" class="form-control loan-input" required ng-model="vm.form.email">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Zip Code</label>
+                      <input type="zipcode" class="form-control loan-input" required ng-model="vm.form.zipCode">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Phone Number <span class="important"> (required)</span></label>
+                      <input type="phone" class="form-control  loan-input" required ng-model="vm.form.phone">
+                    </div>
+                  </div>
+
+                </div>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Address <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control loan-input" ng-model="vm.form.address1">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Address 2</label>
+                      <input type="text" class="form-control  loan-input" ng-model="vm.form.address2">
+                    </div>
+                  </div>
+
+                </div>
+                <br><br>
+
+
+                <h4>Bank Information</h4>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="from-group">
+                      <label for="">Account Holder Name <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control loan-input" ng-model="vm.form.bankName">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for=""> Bank Account <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control  loan-input" ng-model="vm.form.bankAccount">
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <div class="row">
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Bank Routine Number <span class="important"> (required)</span></label>
+                      <input type="text" class="form-control  loan-input" placeholder="Bank Routine Number"
+                        ng-model="vm.form.routineNumber">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Amount<span class="important"> (required)</span></label>
+                      <input type="number" class="form-control  loan-input" placeholder="Amount"
+                      ng-model="vm.form.amount"
+                        >
+                    </div>
+                  </div>
+
+                </div>
+                <br>
+
+                <div class="row">
+
+                  <div class="col-md-12">
+                    <br>
+                    <button class="btn btn-danger btn-lg  float-right" ng-click="vm.submitForm()">Submit</button>
+                    <br><br>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--blog section end-->

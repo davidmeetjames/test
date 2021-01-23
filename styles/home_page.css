@@ -1,0 +1,245 @@
+.coro_bar {
+  background-color: white;
+  min-height: 180px;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  border-top: solid 4px rgb(28, 28, 49);
+  padding-bottom: 20px;
+}
+
+.coro_body {
+  font-size: 18px;
+}
+
+.coro_body {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .coro_bar {
+    background-color: white;
+    min-height: 180px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: solid 4px rgb(28, 28, 49);
+    padding-bottom: 5px;
+    margin-bottom: 150px!important;
+  }
+  .coro_body {
+    font-size: 11px;
+  }
+}
+
+.text-dark {
+  height: 32px!important;
+  width: 150px !important;
+}
+
+.loan-input {
+  height: 32px!important;
+}
+
+.button-dark {
+  height: 32px !important;
+}
+
+.dark_form {
+  background-color: rgb(148, 146, 146);
+  color: white;
+}
+
+.dark_form_bordered {
+  border: solid 2px rgb(78, 77, 77)!important;
+}
+
+.dark_form_bordered {
+  border: solid 2px rgb(20, 4, 160)!important;
+}
+
+.table_header {
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+#routedContent.ng-enter {
+  transform: translateX(-500px);
+  opacity: 0;
+  -webkit-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  -moz-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  -ms-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  -o-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+}
+
+#routedContent.ng-enter-active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+#routedContent.ng-leave {
+  transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  -moz-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  -ms-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  -o-transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+  transition: all 0.35s cubic-bezier(1, .01, 0, .99);
+}
+
+#routedContent.ng-leave-active {
+  transform: translateX(500px);
+  opacity: 0;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
+
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .4s ease-in;
+  vertical-align: middle;
+}
+
+#quote-carousel .carousel-indicators .active {
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all .2s;
+}
+
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote p:before {
+  content: "f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+.bk_table {}
+
+.bk_table_title_row {
+  width: 25%;
+  background-color: rgb(228, 226, 226);
+  font-weight: bold;
+  text-align:right;
+}
+
+
+.btn-danger{
+  background-color:#FF5B1C!important;
+}
+
+.loan-input{
+  outline-color: black!important;
+}
+
+.important{
+  color: red;
+  font-size: 11px;
+}
+.rect1{
+  border-bottom:solid 2px black;
+  font-weight:bold;
+  font-size:18px;
+  margin: 15px;
+}
+
+.status-box{
+  width:60%;
+  background-color: #f3f1f1;
+  height: 70px;
+  margin-left:15px;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+.status-info{
+  color:black;
+  font-weight:bold;
+}
+
+.status-info span{
+  color: blue;
+}
+
+.status-amount{
+  font-size:25px;
+  font-weight:bold;
+  color:black;
+}
+
+.status-green{
+  background-color:green;
+  color:white;
+  text-align: center;
+  width:50%;
+  height:70px;
+  margin-left:15px;
+  padding-top:15px;
+}
+
+.final-step{
+   height:70px;
+   margin-left:20px;
+ margin-right:20px;
+   background-color:#FF5B1C!important;
+   color:white;
+   text-align:center;
+   padding-top: 20px;
+   font-size:20px;
+   cursor:pointer;
+
+}
+
+
+.final-step-content{
+ background-color:#f1f0f0;
+ min-height:150px;
+ margin-left:20px;
+ margin-right:20px;
+ color:black;
+text-align: justify;
+padding:15px;
+}
+
+
+
+
+
+
+
+

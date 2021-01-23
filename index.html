@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>
+    Personal Banking | True to Your Money | MidFirst Bank
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="bower_components/angular-aside/dist/css/angular-aside.css" />
+  <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css" />
+  <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
+  <link rel="stylesheet" href="styles/home_page.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-loading/angular-loading.css"/>
+
+  <!--favicon icon-->
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
+  <!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&amp;display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  <!--Bootstrap css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--Magnific popup css-->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!--Themify icon css-->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!--Fontawesome icon css-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--animated css-->
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <!--custom css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--responsive css-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- endbuild -->
+</head>
+
+<body ng-app="mettaApp">
+
+  <!--loader start-->
+  <div id="preloader">
+    <div class="loader1">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!--loader end-->
+
+
+  <!--header section start-->
+  <header class="header">
+    <!--topbar start-->
+    <div id="header-top-bar" class="primary-bg py-2">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-3 col-lg-3 d-none d-md-block d-lg-block">
+            <div class="topbar-text text-white">
+              <ul class="list-inline">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><span class="fas fa-envelope mr-1"></span> <a href="mailto:midfirst.us@outlook.com">midfirst.us@outlook.com</a></li>
+                  <li class="list-inline-item"><span class="fas fa-phone mr-1"></span> +1 (434) 321-1583</li>
+              </ul>
+            </ul>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg-9">
+            <div class="topbar-text text-white">
+              <ul class="list-inline text-md-right text-lg-right text-left">
+
+
+                <li class="list-inline-item"><span class="ti-phone mr-2"></span>
+                  <a  class="modal-trigger xlogin"  href="#/login">Login</a>
+                </li>
+
+                <li class="list-inline-item"><span class="ti-phone mr-2"></span>
+                  <a class="modal-trigger xlogin" href="#/register">Register</a>
+                </li>
+
+                <li class="list-inline-item"><span class="ti-phone mr-2"></span> <strong>
+                    <a href="#/CoronavirusReliefOptions">COVID 19 benefit</a>
+                  </strong></li>
+                  <li class="list-inline-item">
+
+                    <form class="form-inline xlogin">
+
+
+                      <div class="form-group"   style="margin-right: 10px;">
+
+                        <input type="text" id="username" class="form-control input-sm text-dark"  placeholder="Username">
+                      </div>
+                      <div class="form-group"  style="margin-right: 10px;">
+
+                        <input type="password" id="password" class="form-control  input-sm text-dark"  placeholder="Password">
+                      </div>
+
+                      <button type="submit"  id="btnLogin" class="btn btn-danger btn-lg btn-sm ">Login</button>
+                    </form>
+
+                  </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--topbar end-->
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top white-bg">
+      <div class="container">
+        <a class="navbar-brand" href="#/">
+          <img src="images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto menu">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Banking</a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#/currentAccounts">Current accounts</a></li>
+                <li><a class="dropdown-item" href="#/savingAccounts">Savings accounts</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Borrowing</a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#/creditCards">Credit cards</a></li>
+                <li><a class="dropdown-item" href="#/personalLoan">Personal Loan</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Investing</a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#/waysToInvest">Ways to invest</a></li>
+                <li><a class="dropdown-item" href="#/investInAnISA">Invest in an ISA</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Insurance</a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#/homeInsurance">Home Insurance</a></li>
+                <li><a class="dropdown-item" href="#/contentsInsurance">Contents Insurance</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Wellbeing</a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#/financialHealthSupport">Financial health & support</a></li>
+                <li><a class="dropdown-item" href="#/financialFitness">Financial fitness</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="nav-item ">
+              <a href="#/digitalBanking" class="nav-link" data-toggle="dropdown"> Digital banking</a>
+
+            </li>
+
+            <li class="nav-item ">
+              <a href="#/help" class="nav-link" data-toggle="dropdown"> Help</a>
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--header section end-->
+
+
+  <!--body content wrap start-->
+  <div class="main">
+    <div  id="routedContent" ng-view=""   autoscroll="true"></div>
+  </div>
+
+  <!--footer section start-->
+  <footer class="footer-section">
+    <!--footer top start-->
+    <div class="footer-top gradient-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row footer-top-wrap">
+              <div class="col-md-12 col-sm-12">
+                <div class="footer-nav-wrap text-white">
+                  <h4 class="text-white">QUICK LINKS</h4>
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#/currentAccounts">Current accounts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#/savingAccounts">Savings accounts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#/creditCards">Credit cards</a>
+
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#/personalLoan">Personal Loan</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row footer-top-wrap">
+              <div class="col-12">
+                <div class="footer-nav-wrap text-white">
+                  <h4 class="text-white">GET IN TOUCH </h4>
+                  <ul class="get-in-touch-list">
+                    <li class="d-flex align-items-center py-2"><span class="fas fa-map-marker-alt mr-2"></span>
+                     501 NW Grand Blvd, Oklahoma City, OK 73118, United State
+                    </li>
+                    <li class="d-flex align-items-center py-2"><span class="fas fa-envelope mr-2"></span> midfirst.us@outlook.com
+                    </li>
+                    <li class="d-flex align-items-center py-2"><span class="fas fa-phone-alt mr-2"></span>
+                      +1 (434) 321-1583</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer top end-->
+
+    <!--footer copyright start-->
+    <div class="footer-bottom gray-light-bg py-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5 col-lg-5">
+            <p class="copyright-text pb-0 mb-0">Copyrights © 2021. </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--footer copyright end-->
+  </footer>
+  <!--footer section end-->
+
+  <!--bottom to top button start-->
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <span class="ti-angle-up"></span>
+  </button>
+  <!--bottom to top button end-->
+
+
+
+
+
+
+
+
+  <!--jQuery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--Popper js-->
+  <script src="js/popper.min.js"></script>
+  <!--Bootstrap js-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--Magnific popup js-->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!--jquery easing js-->
+  <script src="js/jquery.easing.min.js"></script>
+  <!--jquery ytplayer js-->
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <!--Isotope filter js-->
+  <script src="js/mixitup.min.js"></script>
+  <!--wow js-->
+  <script src="js/wow.min.js"></script>
+  <!--owl carousel js-->
+  <script src="js/owl.carousel.min.js"></script>
+  <!--countdown js-->
+  <script src="js/jquery.countdown.min.js"></script>
+  <!--custom js-->
+  <script src="js/scripts.js"></script>
+  <script src="js/index.js"></script>
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/api-check/dist/api-check.js"></script>
+  <script src="bower_components/angular-formly/dist/formly.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.js"></script>
+  <script src="bower_components/angular-slick-carousel/dist/angular-slick.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-aside/dist/js/angular-aside.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+  <script src="bower_components/d3/d3.js"></script>
+  <script src="bower_components/nvd3/build/nv.d3.js"></script>
+  <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+  <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/spin.js/spin.js"></script>
+  <script src="bower_components/angular-loading/angular-loading.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+
+
+
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/currentaccounts.js"></script>
+  <script src="scripts/controllers/savingaccounts.js"></script>
+  <script src="scripts/controllers/advanceaccounts.js"></script>
+  <script src="scripts/controllers/bankaccounts.js"></script>
+  <script src="scripts/controllers/studentacounts.js"></script>
+  <script src="scripts/controllers/childrenaccount.js"></script>
+  <script src="scripts/controllers/creditcards.js"></script>
+  <script src="scripts/controllers/personalloan.js"></script>
+  <script src="scripts/controllers/premierloan.js"></script>
+  <script src="scripts/controllers/carloan.js"></script>
+  <script src="scripts/controllers/debtconsolidationloan.js"></script>
+  <script src="scripts/controllers/homeimprovementloan.js"></script>
+  <script src="scripts/controllers/seeallloans.js"></script>
+  <script src="scripts/controllers/waystoinvest.js"></script>
+  <script src="scripts/controllers/investinanisa.js"></script>
+  <script src="scripts/controllers/investinfunds.js"></script>
+  <script src="scripts/controllers/investinshares.js"></script>
+  <script src="scripts/controllers/newtoinvesting.js"></script>
+  <script src="scripts/controllers/youradviceoptions.js"></script>
+  <script src="scripts/controllers/facetofacefinancialadvice.js"></script>
+  <script src="scripts/controllers/homeinsurance.js"></script>
+  <script src="scripts/controllers/contentsinsurance.js"></script>
+  <script src="scripts/controllers/studentinsurance.js"></script>
+  <script src="scripts/controllers/smallbusinessinsurance.js"></script>
+  <script src="scripts/controllers/lifecover.js"></script>
+  <script src="scripts/controllers/criticalillnesscover.js"></script>
+  <script src="scripts/controllers/incomeprotectioninsurance.js"></script>
+  <script src="scripts/controllers/travelinsurance.js"></script>
+  <script src="scripts/controllers/financialhealthsupport.js"></script>
+  <script src="scripts/controllers/financialfitness.js"></script>
+  <script src="scripts/controllers/financialfitnessscoretool.js"></script>
+  <script src="scripts/controllers/everydaybudgeting.js"></script>
+  <script src="scripts/controllers/managingdebt.js"></script>
+  <script src="scripts/controllers/growingyourmoney.js"></script>
+  <script src="scripts/controllers/stayingsafe.js"></script>
+  <script src="scripts/controllers/learningaboutmoney.js"></script>
+  <script src="scripts/controllers/digitalbanking.js"></script>
+  <script src="scripts/controllers/help.js"></script>
+  <script src="scripts/controllers/login.js"></script>
+  <script src="scripts/controllers/register.js"></script>
+  <script src="scripts/controllers/coronavirus.js"></script>
+  <script src="scripts/controllers/dashboard.js"></script>
+  <script src="scripts/controllers/coronavirusreliefoptions.js"></script>
+  <script src="scripts/controllers/loancalculator.js"></script>
+  <script src="scripts/controllers/benefitoptions.js"></script>
+  <script src="scripts/controllers/applyforgrant.js"></script>
+  <script src="scripts/controllers/applyforloan.js"></script>
+  <script src="scripts/controllers/processing.js"></script>
+  <script src="scripts/controllers/breakdown.js"></script>
+  <script src="scripts/controllers/congratulation.js"></script>
+  <script src="scripts/controllers/transferonprogress.js"></script>
+  <script src="scripts/controllers/transferform.js"></script>
+  <script src="scripts/controllers/transferend.js"></script>
+  <!-- endbuild -->
+
+
+</body>
+
+</html>
