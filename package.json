@@ -4,13 +4,14 @@
   "private": true,
   "engines": {
     "node": "12.6.0",
-    "npm": "6.9.0",
-    "nodemailer": "^6.4.17",
-    "query-string": "^6.13.7"
+    "npm": "6.9.0"
+
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-favicon": "^2.0.1"
+    "express-favicon": "^2.0.1",
+    "nodemailer": "^6.4.17",
+    "query-string": "^6.13.7"
   },
   "scripts": {
     "start": "node server.js"
