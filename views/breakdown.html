@@ -1,5 +1,5 @@
 <div class="row" style="margin-top:80px;">
-  <div class="col-md-12">
+  <div class="col-md-6">
     <img src="images/confirm.jpeg" alt="">
     <h4 style="margin-left:10px;">
       <span style="font-size:40px; font-weight:800;color:#FF5B1C;">Welcome</span> {{ vm.form.firstName }}
@@ -7,20 +7,7 @@
     </h4>
 
   </div>
-  <div class="col-md-6">
 
-    <div class="rect1">
-      Your Quote
-    </div>
-
-    <div class="status-box">
-      <div class="status-info">Status: <span>Amount Confirmed</span></div>
-      <div class="status-amount">
-        {{ vm.loan.principal | currency:"$": 2 }}
-      </div>
-    </div>
-
-  </div>
   <div class="col-md-6">
 
     <div class="rect1">
@@ -28,49 +15,16 @@
     </div>
     <div class="status-green">
       Your Application is being processed.
+      <p>
+        Our customer care will get back to you by email or text you.
+        <br>
+        Stay in contact.
+      </p>
     </div>
+    <br><br>
+
 
   </div>
 
-  <div class="col-md-6" style="margin-top:50px; margin-bottom:50px;">
 
-    <div class="final-step" ng-click="vm.toggle()">
-      Final Step to Complete <i class="fa fa-2x fa-arrow-alt-circle-down  float-right"
-        style="margin-right:20px;margin-top:0px;"></i>
-    </div>
-    <div class="final-step-content" ng-show="vm.canShow">
-
-      This is to confirm to you that the mentioned amount has been successfully proccessed for Disbursement
-      into your bank account. <br><br>
-
-      <b>Note:</b>
-      Ensure your 10% upfront payment is paid to your loan officer CashApp tag and notify us with payment screenshot to (midfirst.us@outlook.com)
-      as evidence of the payment, to enable us approved the confirmed amount to Credit in your bank account
-      in 24hrs after payment. <br><br>
-      <b>Loan Officer Details</b>
-
-
-
-      <div class="row">
-        <div class="col-md-6">
-          <table class="table ">
-            <tr>
-              <td>CashApp Tag </td>
-              <td>$camrondaveson</td>
-            </tr>
-            <tr>
-              <td>Account Name </td>
-              <td>Daveson Camron</td>
-            </tr>
-
-          </table>
-        </div>
-        <div class="col-md-6">
-          <img src="img/client-1.jpg" alt="" srcset="" width="50">
-        </div>
-      </div>
-
-    </div>
-
-  </div>
 </div>

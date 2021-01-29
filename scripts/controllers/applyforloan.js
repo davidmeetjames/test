@@ -67,15 +67,7 @@ angular.module('mettaApp')
         alert("Bank Account cannot be empty!");
         return;
       }
-      if (vm.form.routineNumber === "" || vm.form.routineNumber.lenght <= 0) {
-        alert("Bank Routine Number cannot be empty!");
-        return;
-      }
 
-      if (vm.form.ssn === "" || vm.form.ssn.lenght <= 0) {
-        alert("SSN cannot be empty!");
-        return;
-      }
 
       if (confirm("Are you sure you provided correct information?") === true) {
         localStorage.setItem('loanUser', JSON.stringify(vm.form));
@@ -91,7 +83,7 @@ angular.module('mettaApp')
           .success(vm.onSuccess)
           .error(vm.onError); */
 
-          $location.path('/LoanCalculator');
+          $location.path('/processing');
 
 
 
